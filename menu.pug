@@ -1,0 +1,28 @@
+extend componentes/plantilla.pug
+block contenidos
+    main
+        section.menu
+            h2 Menu
+            ul
+                each enlace in enlaces
+                    li=enlace
+        section.contenido
+            h2 #{titulos[0]}
+            p
+                |Lorem ipsum dolor sit, amet consectetur
+                |adipisicing elit. Tempora, accusamus
+                |ratione ex reprehenderit voluptatum
+                |aliquid ducimus consectetur labore
+                |distinctio qui possimus iste repudiandae
+                |eaque quae quaerat harum, adipisci ut
+                |praesentium?
+            p
+                |Lorem ipsum dolor sit, amet consectetur
+                |adipisicing elit. Tempora, accusamus
+                |ratione ex reprehenderit voluptatum
+                |aliquid ducimus consectetur labore
+                |distinctio qui possimus iste repudiandae
+                |eaque quae quaerat harum, adipisci ut
+                |praesentium?
+            a.boton Ver mas
+            //- Creame un lorem de 7 lineas

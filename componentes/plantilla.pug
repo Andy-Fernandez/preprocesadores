@@ -1,0 +1,12 @@
+include configuraciones.pug
+doctype html
+html
+	//- Aplicaremos los includes:
+	//- head
+	//- 	meta(charset='utf-8')
+	//- 	link(rel="stylesheet", href="css/ejercicio-pug.css")
+	include head.pug
+	body
+		include header.pug
+		block contenidos
+		include footer.pug

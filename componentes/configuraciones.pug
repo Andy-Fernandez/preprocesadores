@@ -1,0 +1,14 @@
+-var titulo = "PlatziGames"
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var usuario = "David"
+-var contenido = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Donec auctor, nisl eget ultricies tincidunt, nunc nunc.","Donec auctor, nisl eget ultricies tincidunt, nunc nunc."]
+-var enlaces = ['Acerca','Noticias','Contacto']
+//- Creamos un mixin:
+//- un mixin puede recibir o no parametros:
+mixin caja(imagen, titulo, contenido)
+	.caja
+		.caja__imagen: img(src=imagen)
+		.caja__contenido
+			h3 #{titulo}
+			p
+				| #{contenido}
