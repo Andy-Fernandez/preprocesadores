@@ -1,0 +1,39 @@
+@color-primario: #333333;
+@color-claro: #ffffff;
+@color-secundario: #8841da;
+@color-variacion: #012179;
+@Fuente1: 'Lato', sans-serif;
+@Fuente2: 'Oswald', sans-serif;
+@fuente-base: 18px;
+
+.sombra-caja {
+    box-shadow: 0 5px 15px 0px fade(@color-primario, 10%);
+}
+.Oswald {
+    font-family: @Fuente2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+// Tenemos un problema al usar line-height: @fuente-base + 10%; en el h1,
+// el título colapsa y lo resolveremos con un mixin
+.fuente(@font-size ){
+    font-size: @font-size;
+    line-height: @font-size + 10%;
+}
+// Entonces el line-hight queda en función del tamaño de la fuente
+
+
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: @Fuente1;
+    color: @color-primario;
+    .fuente(@fuente-base);
+}
+h1, h2, h3 {
+    .Oswald;
+    margin: 0;
+}
