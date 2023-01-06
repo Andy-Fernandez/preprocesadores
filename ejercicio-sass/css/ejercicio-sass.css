@@ -35,8 +35,8 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
-  color: #ffffff;
-  background-color: #8841da;
+  color: #8841da;
+  background-color: #ffffff;
 }
 .perfil__avatar {
   display: block;
@@ -55,7 +55,7 @@ main {
   text-align: center;
   font-weight: 700;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(63, 87, 154, 0.5);
 }
 .perfil__boton {
   display: block;
@@ -67,8 +67,8 @@ main {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: #333333;
+  border: 2px solid #333333;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ main {
 .perfil__minibio {
   margin: 0 auto;
   padding-top: 20px;
-  color: #ffffff;
+  color: #8841da;
 }
 .estadistica--perfil {
   display: -webkit-box;
@@ -104,7 +104,8 @@ main {
 .estadistica--perfil span {
   font-size: 12px;
   text-align: center;
-  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 0.5);
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -125,25 +126,27 @@ main {
   float: left;
   padding-right: 10px;
   font-size: 40px;
+  color: #3f579a;
 }
 .ubicacion--perfil h2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  color: rgba(51, 51, 51, 0.5);
+  color: #333333;
 }
 .ubicacion--perfil h3 {
-  text-transform: uppercase;
   font-size: 12px;
+  color: rgba(51, 51, 51, 0.5);
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 .galeria {
   width: 60%;
-  height: 250px;
+  height: auto;
   margin: 10px auto;
-  padding: 20px 0 0 30px;
+  padding: 20px 0 10px 30px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -174,27 +177,33 @@ main {
 }
 
 .articulos {
-  width: 40%;
-  padding: 50px 0 0 50px;
+  width: 50%;
+  padding: 60px 0 0 100px;
+  background-color: #333333;
 }
 
 .articulo {
   margin-bottom: 75px;
   border-bottom: 3px solid #8841da;
+  color: #ffffff;
 }
 .articulo__categoria {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   color: #8841da;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
-.articulo__titilo {
+.articulo__titulo {
+  width: 70%;
+  font-weight: 400;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 .articulo__descripcion {
+  font-size: 16px;
   margin-bottom: 30px;
   padding-right: 100px;
+  color: rgba(255, 255, 255, 0.8);
 }

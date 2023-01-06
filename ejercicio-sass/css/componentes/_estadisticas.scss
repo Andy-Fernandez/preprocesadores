@@ -15,7 +15,8 @@
     span {
         font-size: 12px;
         text-align: center;
-        text-transform: uppercase;
+        font-weight: 600;
+        color: get-opacity($color-primario, 0.5);
         @include titulos($Fuente2);
     }
 }
